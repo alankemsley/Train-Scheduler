@@ -1,18 +1,16 @@
 $(document).ready(function(){
-  // Trigger pop-up window
+
+  // Trigger modal
   $(".modal").modal();
 
-  //Trigger slide-up window
-  $(window).resize(function(){
-  	if ($(window).width() <= 600){
-  		// do something here
-      console.log("Small!");
-      $("#model").addClass("bottom-sheet");
-  	} else {
-      console.log("Big!");
-      $("#model").removeClass("bottom-sheet");
-    }
-  });
+  // Modal format
+	if ($(window).width() <= 600){
+		// Slide-up modal
+    $("#modal").addClass("bottom-sheet");
+	} else {
+    // Pop-up modal
+    $("#modal").removeClass("bottom-sheet");
+  }
 
   //Remove FAB pulse
   $("#add-button").on("click", function() {
