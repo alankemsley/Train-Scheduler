@@ -7,7 +7,7 @@
 /*HEADER*/
 
 #header {
-  height: 75px;
+  height: 70px;
   border-bottom: 3px solid #212121;
 }
 
@@ -30,6 +30,7 @@
   }
   #logo {
     height: 60px;
+
   }
   #schedule-row {
     padding-top: 30px;
