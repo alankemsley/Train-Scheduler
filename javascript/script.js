@@ -61,7 +61,7 @@ $(document).ready(function() {
     console.log(newTrain.first);
 
     // Alert
-    Materialize.toast('New train added.', 4000);
+    Materialize.toast('New train added.', 1500);
 
     // Clears all of the text-boxes
     $("#train").val("");
