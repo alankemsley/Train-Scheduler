@@ -73,23 +73,23 @@ $(document).ready(function() {
   // Create Firebase event for adding trains to the database and a row in the html when a user adds an entry
   database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
-    console.log(childSnapshot.val());
-
-    // Store everything into a variable.
     var trainNumber = childSnapshot.val().train;
     var trainDestination = childSnapshot.val().destination;
     var trainFrequency = childSnapshot.val().frequency;
     var firstTrain = childSnapshot.val().first;
 
-    // Train Info
-    console.log(trainNumber);
-    console.log(trainDestination);
-    console.log(trainFrequency);
-    console.log(firstTrain);
+    //Get Next Train Info
+    var firstTrainConverted = moment(firstTrain, "hh:mm").subtract(1, "years");
+    var currentTime = moment();
+    var diffTime = moment().diff(moment(firstTrainConverted), "minutes");
+    var trainRemainder = diffTime % trainFrequency;
+    var nextTrainMins = trainFrequency - trainRemainder;
+    var nextTrain = moment().add(nextTrainMins, "minutes");
+    var nextTrainFormatted = moment(nextTrain).format("h:mm a");
 
     // Add each train's data into the table
     $("#red-table").children("tbody").append("<tr><td>" + trainNumber + "</td><td>" + trainDestination + "</td><td>" +
-    trainFrequency + "</td><td>" + firstTrain + "</td><td>" + firstTrain + "</td></tr>");
+    trainFrequency + "</td><td>" + nextTrainFormatted + "</td><td>" + nextTrainMins + "</td></tr>");
 
   });
 
