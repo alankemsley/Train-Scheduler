@@ -1,9 +1,9 @@
-
 /*GENERAL*/
 
 .container {
   max-width: 1200px;
 }
+
 
 /*HEADER*/
 
@@ -16,6 +16,7 @@
   height: 80px;
   border: 3px solid #f5f5f5;
 }
+
 
 /*SCHEDULE ROW*/
 
@@ -60,21 +61,21 @@ footer {
   }
   #logo {
     height: 60px;
-
   }
   #schedule-row {
     padding-top: 30px;
   }
 }
 
+
 /*STICKY FOOTER*/
 
 body {
-   display: flex;
-   min-height: 100vh;
-   flex-direction: column;
- }
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
- main {
-   flex: 1 0 auto;
- }
+main {
+  flex: 1 0 auto;
+}

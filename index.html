@@ -1,194 +1,196 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>MBTA Boston T Schedule</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/master.css">
-  </head>
-  <body class="grey-text text-darken-3 grey lighten-4">
 
-    <!-- HEADER -->
-    <header class="row grey darken-4" id="header">
-      <div class="container">
-        <div class="col s12 center-align">
-          <h1><a href="index.html"><img id="logo" class="circle" src="images/t-logo.jpg" alt="MBTA T"></a></h1>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>MBTA Boston T Schedule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body class="grey-text text-darken-3 grey lighten-4">
+
+  <!-- HEADER -->
+  <header class="row grey darken-4" id="header">
+    <div class="container">
+      <div class="col s12 center-align">
+        <h1><a href="index.html"><img id="logo" class="circle" src="images/t-logo.jpg" alt="MBTA T"></a></h1>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- MAIN SECTOIN-->
-    <main>
-      <!-- SCHEDULE ROW -->
-      <div class="row" id="schedule-row">
-        <div class="container">
+  <!-- MAIN SECTOIN-->
+  <main>
+    <!-- SCHEDULE ROW -->
+    <div class="row" id="schedule-row">
+      <div class="container">
 
-          <!-- RED LINE SCHEDULE CARD-->
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <table class="centered">
-                  <thead id="red-table-title" class="red darken-2 grey-text text-lighten-5">
-                    <tr>
-                      <th>Dest.</th>
-                      <th>Freq.</th>
-                      <th>Next Train</th>
-                      <th>Min.</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Alewife</td>
-                      <td>8</td>
-                      <td>8:30 AM</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Ashmont</td>
-                      <td>4</td>
-                      <td>8:34 AM</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>Braintree</td>
-                      <td>4</td>
-                      <td>8:36 AM</td>
-                      <td>8</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="card-action train-line right-align grey lighten-3 red-text text-darken-2">
-                <h6><i class="material-icons red-text text-darken-2">directions_subway</i>Red</h6>
-              </div>
+        <!-- BLUE LINE SCHEDULE CARD-->
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <table class="centered">
+                <thead id="blue-table-title" class="blue darken-4 grey-text text-lighten-5">
+                  <tr>
+                    <th>Dest.</th>
+                    <th>Freq.</th>
+                    <th>Next Train</th>
+                    <th>Min.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Wonderland</td>
+                    <td>8</td>
+                    <td>8:30 AM</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Bowdoin</td>
+                    <td>4</td>
+                    <td>8:34 AM</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>Wonderland</td>
+                    <td>4</td>
+                    <td>8:36 AM</td>
+                    <td>8</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-action train-line right-align grey lighten-3 blue-text text-darken-4">
+              <h6><i class="material-icons blue-text text-darken-4">directions_subway</i>Blue</h6>
             </div>
           </div>
+        </div>
 
-          <!-- GREEN LINE SCHEDULE CARD-->
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <table class="centered">
-                  <thead  id="green-table-title" class="green darken-3 grey-text text-lighten-5">
-                    <tr>
-                      <th>Dest.</th>
-                      <th>Freq.</th>
-                      <th>Next Train</th>
-                      <th>Min.</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Lechmere</td>
-                      <td>8</td>
-                      <td>8:30 AM</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Riverside</td>
-                      <td>4</td>
-                      <td>8:34 AM</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>Heath</td>
-                      <td>4</td>
-                      <td>8:36 AM</td>
-                      <td>8</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="card-action train-line right-align grey lighten-3 green-text text-darken-3">
-                <h6><i class="material-icons green-text text-darken-3">tram</i>Green</h6>
-              </div>
+        <!-- GREEN LINE SCHEDULE CARD-->
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <table class="centered">
+                <thead id="green-table-title" class="green darken-3 grey-text text-lighten-5">
+                  <tr>
+                    <th>Dest.</th>
+                    <th>Freq.</th>
+                    <th>Next Train</th>
+                    <th>Min.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lechmere</td>
+                    <td>8</td>
+                    <td>8:30 AM</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Riverside</td>
+                    <td>4</td>
+                    <td>8:34 AM</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>Heath</td>
+                    <td>4</td>
+                    <td>8:36 AM</td>
+                    <td>8</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-action train-line right-align grey lighten-3 green-text text-darken-3">
+              <h6><i class="material-icons green-text text-darken-3">tram</i>Green</h6>
             </div>
           </div>
+        </div>
 
-          <!-- ORANGE LINE SCHEDULE CARD-->
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <table class="centered">
-                  <thead id="orange-table-title" class="orange darken-3 grey-text text-lighten-5">
-                    <tr>
-                      <th>Dest.</th>
-                      <th>Freq.</th>
-                      <th>Next Train</th>
-                      <th>Min.</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Oak Grove</td>
-                      <td>8</td>
-                      <td>8:30 AM</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Forest Hills</td>
-                      <td>4</td>
-                      <td>8:34 AM</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>Oak Grove</td>
-                      <td>4</td>
-                      <td>8:36 AM</td>
-                      <td>8</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="card-action train-line right-align grey lighten-3 orange-text text-darken-3">
-                <h6><i class="material-icons orange-text text-darken-3">directions_subway</i>Orange</h6>
-              </div>
+        <!-- ORANGE LINE SCHEDULE CARD-->
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <table class="centered">
+                <thead id="orange-table-title" class="orange darken-3 grey-text text-lighten-5">
+                  <tr>
+                    <th>Dest.</th>
+                    <th>Freq.</th>
+                    <th>Next Train</th>
+                    <th>Min.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Oak Grove</td>
+                    <td>8</td>
+                    <td>8:30 AM</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Forest Hills</td>
+                    <td>4</td>
+                    <td>8:34 AM</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>Oak Grove</td>
+                    <td>4</td>
+                    <td>8:36 AM</td>
+                    <td>8</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-action train-line right-align grey lighten-3 orange-text text-darken-3">
+              <h6><i class="material-icons orange-text text-darken-3">directions_subway</i>Orange</h6>
             </div>
           </div>
+        </div>
 
-          <!-- BLUE LINE SCHEDULE CARD-->
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <table class="centered">
-                  <thead id="blue-table-title" class="blue darken-4 grey-text text-lighten-5">
-                    <tr>
-                      <th>Dest.</th>
-                      <th>Freq.</th>
-                      <th>Next Train</th>
-                      <th>Min.</th>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
-              <div class="card-action train-line right-align grey lighten-3 blue-text text-darken-4">
-                <h6><i class="material-icons blue-text text-darken-4">directions_subway</i>Blue</h6>
-              </div>
+        <!-- RED LINE SCHEDULE CARD (FOR THIS ASSIGNMENT)-->
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <table class="centered">
+                <thead id="red-table-title" class="red darken-2 grey-text text-lighten-5">
+                  <tr>
+                    <th>Dest.</th>
+                    <th>Freq.</th>
+                    <th>Next Train</th>
+                    <th>Min.</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="card-action train-line right-align grey lighten-3 red-text text-darken-2">
+              <h6><i class="material-icons red-text text-darken-2">directions_subway</i>Red</h6>
             </div>
           </div>
+        </div>
 
-          <!-- FIXED ACTION BUTTON -->
-          <div id="add-button" class="fixed-action-btn horizontal click-to-toggle">
-            <a class="btn-floating waves-effect waves-light pulse btn-large blue darken-4 modal-trigger" href="#modal">
+        <!-- FIXED ACTION BUTTON -->
+        <div id="add-button" class="fixed-action-btn horizontal click-to-toggle">
+          <a class="btn-floating waves-effect waves-light pulse btn-large red darken-2 modal-trigger" href="#modal">
               <i class="material-icons">add</i>
             </a>
-          </div>
-
         </div>
+
       </div>
+    </div>
 
   </main>
 
   <!-- FOOTER -->
   <footer class="page-footer grey darken-2 grey-text text-lighten-4">
-      <div class="container">
-        <div class="col sm12 center-align">
-          © 2017 Alan Kemsley
-        </div>
-        <br>
+    <div class="container">
+      <div class="col sm12 center-align">
+        © 2017 Alan Kemsley
       </div>
+      <br>
+    </div>
 
   </footer>
 
@@ -204,7 +206,7 @@
           <!-- Train Line Input (Locked for this homework assignment)-->
           <div class="row">
             <div class="input-field col s12">
-              <input disabled placeholder="Train Line: Blue (Locked for this assignment)">
+              <input disabled placeholder="Train Line: RED (Locked for this assignment)">
             </div>
           </div>
 
@@ -231,23 +233,10 @@
 
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action waves-effect waves-black btn-flat modal-close">Cancel</a>
-      <button class="btn grey darken-4 waves-effect waves-light modal-close" type="submit" name="action">Submit<i class="material-icons right">send</i>
-  </button>
+      <button class="btn red darken-2 waves-effect waves-light modal-close" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
     </div>
   </div>
 
@@ -264,5 +253,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
   <script type="text/javascript" src="javascript/script.js"></script>
 
-  </body>
+</body>
+
 </html>
