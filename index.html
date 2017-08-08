@@ -166,7 +166,7 @@
         <div class="col s12 m6">
           <div class="card">
             <div class="card-image">
-              <table class="centered">
+              <table id="red-table" class="centered">
                 <thead id="red-table-title" class="red darken-2 grey-text text-lighten-5">
                   <tr>
                     <th>Train</th>
@@ -176,6 +176,9 @@
                     <th>Min.</th>
                   </tr>
                 </thead>
+                <tbody>
+                  <!-- Train info pulled from database will be shwon here. -->
+                </tbody>
               </table>
             </div>
             <div class="card-action train-line right-align grey lighten-3 red-text text-darken-2">
@@ -239,13 +242,13 @@
           <!-- Frequency Input-->
           <div class="row">
             <div class="input-field col s12 m6">
-              <input id="frequency" type="number" placeholder="Enter train frequency in minutes." class="validate">
+              <input id="frequency" type="text" placeholder="Enter train frequency in minutes." class="validate">
               <label for="frequency">Frequency</label>
             </div>
             <!-- First Train Input -->
             <div class="input-field col s12 m6">
-              <input id="first-train" type="text" class="timepicker">
-              <label for="first-train">First Train</label>
+              <input id="first" type="text" class="timepicker">
+              <label for="first">First Train</label>
             </div>
           </div>
 
@@ -254,21 +257,15 @@
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action waves-effect waves-black btn-flat modal-close">Cancel</a>
-      <button class="btn red darken-2 waves-effect waves-light modal-close" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+      <button id="submit" class="btn red darken-2 waves-effect waves-light modal-close" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
     </div>
   </div>
-
-
-
-
-
-
-
-
 
   <!-- JAVASCRIPT -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script type="text/javascript" src="javascript/moment.js"></script>
   <script type="text/javascript" src="javascript/script.js"></script>
 
 </body>
