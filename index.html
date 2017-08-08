@@ -34,6 +34,7 @@
               <table class="centered">
                 <thead id="blue-table-title" class="blue darken-4 grey-text text-lighten-5">
                   <tr>
+                    <th>Train</th>
                     <th>Dest.</th>
                     <th>Freq.</th>
                     <th>Next Train</th>
@@ -42,18 +43,21 @@
                 </thead>
                 <tbody>
                   <tr>
+                    <td>BL12</td>
                     <td>Wonderland</td>
                     <td>8</td>
                     <td>8:30 AM</td>
                     <td>2</td>
                   </tr>
                   <tr>
+                    <td>BL13</td>
                     <td>Bowdoin</td>
                     <td>4</td>
                     <td>8:34 AM</td>
                     <td>6</td>
                   </tr>
                   <tr>
+                    <td>BL14</td>
                     <td>Wonderland</td>
                     <td>4</td>
                     <td>8:36 AM</td>
@@ -75,6 +79,7 @@
               <table class="centered">
                 <thead id="green-table-title" class="green darken-3 grey-text text-lighten-5">
                   <tr>
+                    <th>Train</th>
                     <th>Dest.</th>
                     <th>Freq.</th>
                     <th>Next Train</th>
@@ -83,18 +88,21 @@
                 </thead>
                 <tbody>
                   <tr>
+                    <td>GL08</td>
                     <td>Lechmere</td>
                     <td>8</td>
                     <td>8:30 AM</td>
                     <td>2</td>
                   </tr>
                   <tr>
+                    <td>GL09</td>
                     <td>Riverside</td>
                     <td>4</td>
                     <td>8:34 AM</td>
                     <td>6</td>
                   </tr>
                   <tr>
+                    <td>GL10</td>
                     <td>Heath</td>
                     <td>4</td>
                     <td>8:36 AM</td>
@@ -116,6 +124,7 @@
               <table class="centered">
                 <thead id="orange-table-title" class="orange darken-3 grey-text text-lighten-5">
                   <tr>
+                    <th>Train</th>
                     <th>Dest.</th>
                     <th>Freq.</th>
                     <th>Next Train</th>
@@ -124,18 +133,21 @@
                 </thead>
                 <tbody>
                   <tr>
+                    <td>OL04</td>
                     <td>Oak Grove</td>
                     <td>8</td>
                     <td>8:30 AM</td>
                     <td>2</td>
                   </tr>
                   <tr>
+                    <td>OL05</td>
                     <td>Forest Hills</td>
                     <td>4</td>
                     <td>8:34 AM</td>
                     <td>6</td>
                   </tr>
                   <tr>
+                    <td>OL06</td>
                     <td>Oak Grove</td>
                     <td>4</td>
                     <td>8:36 AM</td>
@@ -157,6 +169,7 @@
               <table class="centered">
                 <thead id="red-table-title" class="red darken-2 grey-text text-lighten-5">
                   <tr>
+                    <th>Train</th>
                     <th>Dest.</th>
                     <th>Freq.</th>
                     <th>Next Train</th>
@@ -203,16 +216,21 @@
       <div class="row">
         <div class="col s12">
 
-          <!-- Train Line Input (Locked for this homework assignment)-->
+          <!-- Train Line -->
           <div class="row">
             <div class="input-field col s12">
-              <input disabled placeholder="Train Line: RED (Locked for this assignment)">
+              <input disabled placeholder="Train Line: RED">
             </div>
           </div>
 
-          <!-- Destination Input-->
+          <!-- Train Number Input-->
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 m6">
+              <input id="train" type="text" class="validate">
+              <label for="train">Train Number</label>
+            </div>
+            <!-- Destination Input-->
+            <div class="input-field col s12 m6">
               <input id="destination" type="text" class="validate">
               <label for="destination">Destination</label>
             </div>
