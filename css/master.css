@@ -10,6 +10,7 @@
 #header {
   height: 70px;
   width: 100%;
+  margin: 0;
   border-bottom: 3px solid #212121;
 }
 
